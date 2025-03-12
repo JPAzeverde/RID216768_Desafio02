@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.bgGreen{
+    background-color: #02A28F;
+    color: #ffffff;
+
+}
+
+.bgArredondado{
+    border-radius: 8px;
+
+}
+
+h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+main{
+    padding: 60px 8%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    justify-content: space-between;
+
+}
+
+header{
+    padding: 0 8%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+
+}
+
+#firstPost {
+    background-image: url(img/firstPost.jpg);
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#firstPost > a{
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: end;    
+}
+
+
+#post{
+    width: 90%;
+
+
+}
+
+#sideBar{
+    width: 300px;
+    
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    height: 48px;
+
+}
