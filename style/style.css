@@ -116,10 +116,11 @@ main{
 }
 
 .cardPost{
-    width: 48%;
+    width: 45%;
     border: 1px solid #00000036;
     overflow: hidden;
     text-align: left;
+    margin: 0 auto;
 }
 
 .cardPost img{
@@ -215,16 +216,61 @@ footer{
     height: 50px;
 }
 
-@media only screen and (min-width:1024) {
+/*Tablet*/
+@media only screen and (min-width:1024px) and (max-width:1300px){
+    
+    main{
+        padding: 0 20px;
+    }
+    #post{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    
+    
+    .cardPost{
+        width: 100%;
+    }
 
+    #sideBar{
+        width: 30%;
+    }
 }
 
 /*Tablet*/
-@media only screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (max-width:1023px){
     
-}
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 10px;
+    }
 
-/*Smartphone*/
-@media only screen and (max-width:767px){
+    .cardPost{
+        width: 100%;
+    }
+
+    #post{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    #sideBar{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    #popularPost{
+        padding-bottom: 50px;
+    }
+
+    header{
+        height: 100px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        padding-left: 15px;
+
+    }
     
 }
