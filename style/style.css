@@ -71,7 +71,7 @@ main{
     text-align: start;
     align-items: flex-start;
     justify-content: flex-end;
-    padding: 40px;
+    padding: 20px;
     color: #fff;
     text-decoration: none;
 
@@ -80,8 +80,10 @@ main{
 #post > a > p{
     margin-bottom: 10px;
 }
-#post > a > h2{
+#titleImg{
     margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 #post > a:hover  {
@@ -98,11 +100,6 @@ main{
     transform: scale(1.1); /* Aumenta a escala do texto mais do que o fundo */
 }
 
-#post > a:hover h2
-{
-    transform: scale(1.1); /* Aumenta a escala do texto mais do que o fundo */
-    padding: 5px 15px;
-}
 
 
 
@@ -251,18 +248,44 @@ footer{
         width: 100%;
     }
 
+    #cardContainer > a:hover{ 
+        transform: scale(1.02); 
+    }
+
     #post{
         width: 100%;
         margin-bottom: 40px;
     }
+
+
+    #firstPost{
+        font-size: 20px;
+    }
+
+    #titleImg{
+        font-size: 34px;
+    }
+
+    #post > a:hover p{
+        transform: scale(1.05); /* Aumenta a escala do texto mais do que o fundo */
+    }
+    #post > a:hover #titleIMG{
+        transform: scale(1.05); /* Aumenta a escala do texto mais do que o fundo */
+    }
+
     
     #sideBar{
         width: 100%;
         padding-bottom: 50px;
     }
 
+    
+
     #popularPost{
         padding-bottom: 50px;
+    }
+    #popularPost > a:hover{
+        transform: scale(1.02); 
     }
 
     header{
