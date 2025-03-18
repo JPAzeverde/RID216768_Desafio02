@@ -25,9 +25,19 @@
     margin-bottom: 20px;
 }
 
+
+
+
+
 .subTitle > a{
     color: #ffffff;
     margin-left: auto;
+    padding: 6px 9px;
+}
+.subTitle > a:hover{
+    background: #0000001c;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
 header{
@@ -38,10 +48,14 @@ header{
     align-items: center;
     padding-left: 160px;
 }
+h1 > a{
+    text-decoration: none;
+    color: white;
+}
 
 main{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
     text-align: center;
     justify-content: center;
     gap: 30px;
@@ -49,12 +63,12 @@ main{
 }
 
 #post{
-    width: 65%;
+    
     margin-bottom: 40px;
 }
 
 #sideBar{
-    width: 35%;
+    
 }
 
 #post > a{
@@ -79,7 +93,11 @@ main{
 
 #post > a > p{
     margin-bottom: 10px;
+    font-weight: 400;
 }
+
+
+
 #titleImg{
     margin-bottom: 10px;
     font-size: 20px;
@@ -99,11 +117,6 @@ main{
 #post > a:hover p{
     transform: scale(1.1); /* Aumenta a escala do texto mais do que o fundo */
 }
-
-
-
-
-
 
 #cardContainer{
     display: flex;
@@ -126,8 +139,13 @@ main{
     object-fit:cover;
 }
 
+
 #cardContainer > a{
     text-decoration: none;
+}
+#cardPost > h3{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .textPost{
@@ -185,12 +203,13 @@ main{
 
 
 #categoriaList > ul > li{
-    list-style: none; /* Remove os marcadores de lista */
+    list-style: url();
     display: flex;
     justify-content: space-between; /* Alinha os links nas extremidades */
     align-items: center; /* Centraliza verticalmente os links */
-    padding: 5px 0; /* Adiciona um espaçamento vertical entre os itens */
+    padding: 4px 6px; /* Adiciona um espaçamento vertical entre os itens */
     cursor: pointer; /* Altera o cursor para "clicável" */
+    border-radius: 4px;
 }
 
 #categoriaList > ul > li > a{
@@ -201,37 +220,43 @@ main{
 #categoriaList > ul > li:hover{
     color: #000;
     text-decoration: underline;
+    transform: scale(1.02);
+    background: #02a28f4d;
 
 }
 
 
 footer{
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     justify-content: center;
     align-items: center;
     height: 50px;
+    font-weight: 600;
 }
 
 /*Tablet*/
 @media only screen and (min-width:1024px) and (max-width:1300px){
     
+    
+    header{
+        height: 100px;
+        margin-bottom: 50px;
+        font-size: 36px;
+        display: flex;
+        align-items: start;
+        padding-left: 40px;
+    }
+    
     main{
         padding: 0 20px;
     }
     #post{
-        width: 70%;
         margin-bottom: 40px;
     }
     
-    
-    .cardPost{
-        width: 100%;
-    }
 
-    #sideBar{
-        width: 30%;
-    }
+
 }
 
 /*Tablet*/
@@ -242,6 +267,15 @@ footer{
         flex-direction: column;
         gap: 30px;
         padding: 0 10px;
+    }
+
+    .subTitle h2{
+    font-size: 16px;
+
+    }
+
+    .subTitle a{
+        font-size: 10px;
     }
 
     .cardPost{
@@ -263,14 +297,15 @@ footer{
     }
 
     #titleImg{
-        font-size: 34px;
+        font-size: 28px;
     }
 
+
     #post > a:hover p{
-        transform: scale(1.05); /* Aumenta a escala do texto mais do que o fundo */
+        transform: scale(1.04); /* Aumenta a escala do texto mais do que o fundo */
     }
     #post > a:hover #titleIMG{
-        transform: scale(1.05); /* Aumenta a escala do texto mais do que o fundo */
+        transform: scale(1.04); /* Aumenta a escala do texto mais do que o fundo */
     }
 
     
@@ -283,7 +318,18 @@ footer{
 
     #popularPost{
         padding-bottom: 50px;
+        margin: 0 4px;
+
     }
+
+    .textPopular h4{
+        font-size: 14px;
+    }
+
+    .textPopular p{
+        font-size: 12px;
+    }
+
     #popularPost > a:hover{
         transform: scale(1.02); 
     }
@@ -291,7 +337,7 @@ footer{
     header{
         height: 100px;
         margin-bottom: 50px;
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 15px;
 
     }
